@@ -3,12 +3,11 @@
 
 int main()
 {
+	// Introduce the game
 	std::cout << "Welcome to Tic-Tac-Toe!\n\n";
 
-	askPlayerName();
-	createOpponent();
-
-	// Introduce the game
+	std::string player_one = askPlayerName();
+	std::string player_two = createOpponent();
 
 	// allow a player to take a turn
 

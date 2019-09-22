@@ -1,7 +1,7 @@
 #include <iostream>
 #include "creategame.h"
 
-void askPlayerName() {
+std::string askPlayerName() {
 
 	std::string player_name;
 
@@ -9,6 +9,8 @@ void askPlayerName() {
 	std::cin >> player_name;
 
 	std::cout << "Hello there " << player_name << "\n";
+	
+	return player_name;
 }
 
 std::string askPlayerForOpponent() {
@@ -22,9 +24,10 @@ std::string askPlayerForOpponent() {
 	return opponent_choice;
 }
 
-void createOpponent() {
+std::string createOpponent() {
 
 	std::string opponent_choice = askPlayerForOpponent();
+	std::string opponent_name;
 
 	while (opponent_choice != "PC" && opponent_choice != "pc") {
 
@@ -38,5 +41,7 @@ void createOpponent() {
 		}		
 	}
 
-	std::cout << "Get ready to play against the computer!\n";
+	opponent_name = "PC";
+	std::cout << "Get ready to play against " << opponent_name << "\n";
+	return opponent_name;
 }

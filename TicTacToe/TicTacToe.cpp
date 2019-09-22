@@ -6,6 +6,7 @@ int main()
 	std::cout << "Welcome to Tic-Tac-Toe!\n\n";
 
 	askPlayerName();
+	createOpponent();
 
 	// Introduce the game
 

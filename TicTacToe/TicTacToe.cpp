@@ -9,6 +9,8 @@ int main()
 	std::string player_one = askPlayerName();
 	std::string player_two = createOpponent();
 
+	whoGoesFirst();
+
 	// allow a player to take a turn
 
 	// determine who won
